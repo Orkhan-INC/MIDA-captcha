@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mida captcha</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .designer{
+            text-align: center;
+            
+        }
+
+        .designer select{
+            width: 100px;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 14px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .number1{ 
+         margin-right: 20px;   
+         font-size: 90px;
+         margin-bottom: 100px;
+         display: inline-block;
+         width: 100px;
+             
+        }
+
+        .number2{ 
+         margin-right: 20px;  
+         font-size: 90px;
+         margin-bottom: 30px;
+         display: inline-block;
+         width: 100px;
+                 
+        }
+
+        .number3{ 
+         margin-right: 20px; 
+         font-size: 90px;
+         margin-bottom: 30px;
+         display: inline-block; 
+         width: 100px;
+                   
+        }
+
+        .number4{ 
+         margin-right: 20px;    
+         font-size: 90px;
+         margin-bottom: 30px;
+         display: inline-block;
+         width: 100px;
+                
+        }
+
+        .number5{ 
+         margin-right: 20px; 
+         font-size: 90px;
+         margin-bottom: 30px;
+         display: inline-block;
+         width: 100px;
+
+                   
+        }
+
+        .number6{ 
+         margin-right: 20px; 
+         font-size: 90px;
+         margin-bottom: 30px;
+         display: inline-block;
+         width: 100px;
+
+                   
+        }
+
+        button {
+            color:white;
+            border: none;
+            padding:20px;
+            background: rgb(40,120,160);
+            font-size: 30px;
+            border-radius: 60px;
+            cursor: pointer;
+            
+        }
+
+
+        .showTimer{
+            background-color: orange;
+            color:white;
+            font-size: 40px;
+            width:100px;
+            height: 50px;
+            text-align: center;
+            border-radius: 50px;
+            margin-left: 200px;      
+        }
+
+        .text{
+            font-size: 30px;
+            text-align: center;
+            display: block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+
+<div class="designer">
+
+<div class="number1" id="number1"></div>
+<div class="number2" id="number2"></div>
+<div class="number3" id="number3"></div>
+<div class="number4" id="number4"></div>
+<div class="number5" id="number5"></div>
+<div class="number6" id="number6"></div>
+</div>
+
+<div class="designer">
+    <select id="selectedValue1">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+
+    <select id="selectedValue2">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select id="selectedValue3">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select id="selectedValue4">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select id="selectedValue5">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select id="selectedValue6">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    
+
+    
+</div>
+
+<div class="designer">
+<button class="refreshbtn" id="refreshbtn">Təzədən</button>
+</div>
+
+<div class="showTimer" id="showTimer"></div>
+<div class="text" id="text"></div>
+    
+    <script src="main.js"></script>
+</body>
+
+
+</html>
